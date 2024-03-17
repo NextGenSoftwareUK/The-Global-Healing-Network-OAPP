@@ -1,0 +1,79 @@
+.find-healers-container {
+    padding: 40px !important;
+    @media (min-width: 320px) and (max-width: 1023px) {
+        padding: 20px !important;
+    }
+
+    h2 {
+        text-align: left !important;
+    }
+
+    .filters-container {
+        display: flex;
+        grid-gap: 32px;
+        @media (min-width: 320px) and (max-width: 1023px) {
+            grid-gap: 16px;
+            display: grid;
+        }
+        &.four-columns {
+            select, input {
+                width: 238px !important;
+            }
+        }
+
+        .single-filter {
+            position: relative;
+            select, input {
+                width: 328px;
+                height: 60px;
+                display: flex;
+                align-items: center;
+                padding: 0 24px;
+                border-radius: 10px;
+                border: 1px solid #D3CAF8;
+                background-color: #FFF;
+                color: #2A2A2A;
+                font-size: 18px;
+                font-weight: 500;
+                outline: none;
+                appearance: none;
+                @media (min-width: 320px) and (max-width: 1023px) {
+                    width: 100% !important;
+                    height: 50px;
+                    font-size: 16px;
+                }
+                @media (min-width: 1024px) and (max-width: 1240px) {
+                    width: 262px;
+                }
+            }
+            input {
+                &::placeholder {
+                    color: #2A2A2A;
+                }
+            }
+
+            svg {
+                position: absolute;
+                top: 50%;
+                transform: translate(0, -50%);
+                right: 24px;
+            }
+        }
+
+        .search-btn {
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 60px;
+            height: 60px;
+            border-radius: 10px;
+            background: var(--Primary-Purple, radial-gradient(76.16% 76.16% at 31.97% 19.67%, rgba(255, 255, 255, 0.70) 0%, rgba(255, 255, 255, 0.00) 69.79%, rgba(255, 255, 255, 0.00) 100%), #6D3AD8);
+            box-shadow: -3px -4px 7px 0px rgba(255, 255, 255, 0.15) inset;
+            @media (min-width: 320px) and (max-width: 1023px) {
+                width: 50px;
+                height: 50px;
+            }
+        }
+    }
+}

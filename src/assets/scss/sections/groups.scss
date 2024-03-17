@@ -1,0 +1,176 @@
+.groups-container {
+    .groups-list {
+        display: grid;
+        grid-gap: 40px;
+        .single-group {
+            padding: 40px;
+            border-radius: 15px;
+            background: #FFF;
+            box-shadow: 0px 10px 25px 0px rgba(33, 52, 48, 0.08);
+            display: grid;
+            grid-template-columns: 1fr 410px;
+            grid-gap: 105px;
+            @media (min-width: 320px) and (max-width: 1023px) {
+                padding: 20px;
+                border-radius: 8px;
+            }
+            @media (min-width: 320px) and (max-width: 767px) {
+                grid-template-columns: 1fr;
+                grid-gap: 50px;
+            }
+            @media (min-width: 768px) and (max-width: 1023px) {
+                grid-template-columns: 1fr 300px;
+                grid-gap: 50px;
+            }
+            .right-section {
+                position: relative;
+                border-radius: 8px;
+                background-color: rgba(109, 58, 216, 0.10);
+                @media (min-width: 320px) and (max-width: 767px) {
+                    min-height: 200px;
+                }
+                a.tag {
+                    position: absolute;
+                    top: 22px;
+                    right: 14px;
+                    height: 40px;
+                    padding: 0 20px;
+                    border-radius: 5px;
+                    background-color: #6D3AD8;
+                    color: #FFF;
+                    font-family: "Poppins", sans-serif;
+                    font-size: 14px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: 20px;
+                    display: flex;
+                    align-items: center;
+                }
+                img {
+                    width: inherit;
+                    max-height: inherit;
+                }
+            }
+
+            .heading {
+                grid-gap: 5px;
+                margin: 0 0 33px;
+                justify-content: flex-start;
+                position: relative;
+                @media (min-width: 320px) and (max-width: 767px) {
+                    grid-gap: 10px;
+                }
+                p {
+                    display: flex;
+                    grid-gap: 5px;
+                    color: #6F7775;
+                    font-size: 14px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: 20px;
+                    align-items: center;
+                    margin: 0;
+                    @media (min-width: 320px) and (max-width: 767px) {
+                        grid-gap: 15px;
+                    }
+                }
+                h2 {
+                    color:#213430;
+                    font-family: "Poppins", sans-serif;
+                    font-size: 22px;
+                    font-style: normal;
+                    font-weight: 600;
+                    line-height: 28px;
+                    position: relative;
+                    left: -7px;
+                }
+                span {
+                    display: block;
+                    width: 60px;
+                    height: 3px;
+                    border-radius: 50px;
+                    background-color: #6D3AD8;
+                    position: absolute;
+                    bottom: -15px;
+                }
+                p, h2, span {
+                    @media (min-width: 320px) and (max-width: 1023px) {
+                        text-align: left;
+                        left: 0;
+                    }
+                }
+            }
+
+            p {
+                color: #6F7775;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 22px;
+                margin: 0 0 15px;
+                @media (min-width: 320px) and (max-width: 1023px) {
+                    text-align: left;
+                }
+            }
+            a.custom-btn {
+                height: 32px;
+                width: 98px;
+                padding: 0 8px;
+                border-radius: 10px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: #FFF;
+                font-size: 8px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: 24px;
+                grid-gap: 8px;
+                border: 1px solid #D3CAF8;
+                background: var(--Footer-FIll, radial-gradient(148.97% 129.54% at 12.43% 14.25%, rgba(255, 255, 255, 0.36) 0%, rgba(255, 255, 255, 0.00) 69.79%, rgba(255, 255, 255, 0.00) 100%), #6D3AD8);
+                box-shadow: 0px 4px 20px 0px rgba(148, 131, 241, 0.10);
+
+                @media (min-width: 320px) and (max-width: 767px) {
+                    height: 40px;
+                    width: auto;
+                    font-size: 16px;
+                }
+            }
+            .owner-info {
+                height: 40px;
+                align-items: center;
+                display: flex;
+                justify-content: space-between;
+                margin: 0 0 15px;
+                @media (min-width: 320px) and (max-width: 767px) {
+                    display: grid;
+                    height: auto;
+                    grid-gap: 20px;
+                }
+                span.img {
+                    width: 40px;
+                    height: 40px;
+                    border-radius: 50%;
+                    overflow: hidden;
+                    background-color: #6D3AD833;
+                }
+                .left-section {
+                    display: flex;
+                    grid-gap: 15px;
+                    align-items: center;
+                }
+                p {
+                    margin: 0;
+                    color: #6F7775;
+                    font-size: 14px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: 20px;
+                    span {
+                        color: #6D3AD8;
+                    }
+                }
+            }
+        }
+    }
+}
