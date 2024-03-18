@@ -1,0 +1,35 @@
+<div 
+    class="single-plan" 
+    [ngClass]="{
+        'bronze-plan': plan.name == 'Bronze',
+        'silver-plan': plan.name == 'Silver',
+        'gold-plan': plan.name == 'Gold'
+    }">
+    <div class="heading">
+        <span>Subscription</span>
+
+        <h2>{{plan.name}}</h2>
+
+        <p>{{plan.description}}</p>
+    </div>
+
+    <a href="{{plan.planLink}}" class="btn">{{plan.price}}*</a>
+
+    <ul class="features-list">
+        <li *ngFor="let f of plan.featuresList">
+            <span>
+                <ng-container *ngIf="f.available">
+                    <svg width="11" height="8" viewBox="0 0 11 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M4.60353 7.83216L10.3535 2.08214C10.5488 1.88687 10.5488 1.57029 10.3535 1.37504L9.64643 0.667925C9.45118 0.472671 9.13458 0.472671 8.93933 0.667925L4.24999 5.35726L2.06064 3.16792C1.86539 2.97265 1.54879 2.97265 1.35353 3.16792L0.646441 3.87503C0.451186 4.0703 0.451186 4.38688 0.646441 4.58214L3.89644 7.83214C4.09168 8.02741 4.40826 8.02741 4.60353 7.83216Z" fill="#6D3AD8"/>
+                    </svg> 
+                </ng-container>
+            </span>
+
+            {{f.name}}
+        </li>
+    </ul>
+
+    <div class="get-plan-btn">
+        <a href="{{plan.planLink}}" class="btn">Get This Plan</a>
+    </div>
+</div>

@@ -23,6 +23,7 @@ import { PartnersComponent } from '../pages/partners/partners.component';
 import { PricingPlansComponent } from '../pages/pricing-plans/pricing-plans.component';
 import { TeamComponent } from '../pages/team/team.component';
 import { VideosComponent } from '../pages/videos/videos.component';
+import { PlanCardComponent } from '../common/cards/plan-card/plan-card.component';
 
 
 
@@ -39,6 +40,7 @@ import { VideosComponent } from '../pages/videos/videos.component';
         BlogSectionComponent,
         HealersSectionComponent,
         EventSectionComponent,
+        PlanCardComponent,
         
         BlogComponent,
         HomePageComponent,
