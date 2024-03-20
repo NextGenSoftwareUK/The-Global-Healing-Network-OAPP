@@ -119,7 +119,7 @@ ul.tag-list {
         box-shadow: 0px 3px 20px 0px rgba(16, 24, 40, 0.20);
         padding: 18px;
         background-color: #fff;
-        border-radius: 180px 180px 8px 8px;
+        border-radius: 180px 180px 8px 8px !important;
         display: grid;
         grid-gap: 24px;
         @media (min-width: 320px) and (max-width: 1023px) {
@@ -304,6 +304,15 @@ ul.tag-list {
         grid-template-columns: 1fr;
     }
 }
+
+.cards-container-without-side-drawer {
+    display: grid;
+    grid-template-columns: 1fr;
+    &.cards-container {
+        grid-template-columns: 1fr 1fr !important;
+    }
+}
+
 
 .side-drawer {
     input, select {

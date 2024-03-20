@@ -1,12 +1,12 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-blog',
-  templateUrl: './blog.component.html',
-  styleUrls: ['./blog.component.scss']
+  selector: 'app-healing-archive',
+  templateUrl: './healing-archive.component.html',
+  styleUrls: ['./healing-archive.component.scss']
 })
-export class BlogComponent {
-  heading:any = 'Latest Blogs';
+export class HealingArchiveComponent {
+  heading = 'Latest Posts';
   sideDrawer = true;
   cardsData = [
     {

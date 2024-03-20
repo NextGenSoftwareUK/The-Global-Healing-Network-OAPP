@@ -13,6 +13,8 @@ import { PricingPlansComponent } from '../pages/pricing-plans/pricing-plans.comp
 import { TeamComponent } from '../pages/team/team.component';
 import { VideosComponent } from '../pages/videos/videos.component';
 import { PartnersComponent } from '../pages/partners/partners.component';
+import { PodcastComponent } from '../pages/podcast/podcast.component';
+import { HealingArchiveComponent } from '../pages/healing-archive/healing-archive.component';
 
 const routes: Routes = [
     { 
@@ -62,6 +64,14 @@ const routes: Routes = [
             {
                 path: "videos",
                 component: VideosComponent
+            },
+            {
+                path: "podcast",
+                component: PodcastComponent
+            },
+            {
+                path: "healing-archive",
+                component: HealingArchiveComponent
             }
         ]
     }

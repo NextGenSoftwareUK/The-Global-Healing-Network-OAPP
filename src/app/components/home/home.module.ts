@@ -24,6 +24,10 @@ import { PricingPlansComponent } from '../pages/pricing-plans/pricing-plans.comp
 import { TeamComponent } from '../pages/team/team.component';
 import { VideosComponent } from '../pages/videos/videos.component';
 import { PlanCardComponent } from '../common/cards/plan-card/plan-card.component';
+import { CardsSectionComponent } from '../section/cards-section/cards-section.component';
+import { DataCardComponent } from '../common/cards/data-card/data-card.component';
+import { PodcastComponent } from '../pages/podcast/podcast.component';
+import { HealingArchiveComponent } from '../pages/healing-archive/healing-archive.component';
 
 
 
@@ -53,6 +57,10 @@ import { PlanCardComponent } from '../common/cards/plan-card/plan-card.component
         PricingPlansComponent,
         TeamComponent,
         VideosComponent,
+        CardsSectionComponent,
+        DataCardComponent,
+        PodcastComponent,
+        HealingArchiveComponent
     ],
     imports: [
         CommonModule,

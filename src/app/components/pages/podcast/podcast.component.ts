@@ -1,12 +1,12 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-videos',
-  templateUrl: './videos.component.html',
-  styleUrls: ['./videos.component.scss']
+  selector: 'app-podcast',
+  templateUrl: './podcast.component.html',
+  styleUrls: ['./podcast.component.scss']
 })
-export class VideosComponent {
-  heading = 'All Vedios';
+export class PodcastComponent {
+  heading = 'Latest Podcast';
   cardsData = [
     {
       id: 1,
