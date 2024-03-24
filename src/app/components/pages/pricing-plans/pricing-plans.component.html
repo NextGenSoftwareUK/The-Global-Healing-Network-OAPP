@@ -1,0 +1,25 @@
+<app-banner 
+    [bannerText]="'Pricing Plan'" 
+    [homeBanner]="false" 
+    [imgSection]="false"
+></app-banner>
+
+<div class="section-container">
+    <div class="inner-container section-content">
+        <div class="heading">
+            <h2>Select pricing Plan</h2>
+            
+            <p>
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry orem 
+                Ipsum has been the industry's standard dummy text ever since the 1500s, when 
+                an unknown.
+            </p>
+        </div>
+        
+        <div class="plans-container">
+            <ng-container *ngFor="let plan of plansList">
+                <app-plan-card [plan]="plan"></app-plan-card>
+            </ng-container>
+        </div>
+    </div>
+</div>
