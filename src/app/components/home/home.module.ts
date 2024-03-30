@@ -28,6 +28,7 @@ import { CardsSectionComponent } from '../section/cards-section/cards-section.co
 import { DataCardComponent } from '../common/cards/data-card/data-card.component';
 import { PodcastComponent } from '../pages/podcast/podcast.component';
 import { HealingArchiveComponent } from '../pages/healing-archive/healing-archive.component';
+import { ContentWithImageComponent } from '../section/content-with-image/content-with-image.component';
 
 
 
@@ -45,6 +46,7 @@ import { HealingArchiveComponent } from '../pages/healing-archive/healing-archiv
         HealersSectionComponent,
         EventSectionComponent,
         PlanCardComponent,
+        ContentWithImageComponent,
         
         BlogComponent,
         HomePageComponent,

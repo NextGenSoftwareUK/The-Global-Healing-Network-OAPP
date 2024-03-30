@@ -6,6 +6,19 @@ import { Component } from '@angular/core';
   styleUrls: ['./podcast.component.scss']
 })
 export class PodcastComponent {
+
+    contentWithImageSectionData:any = {
+        heading: "Connect to Your Audience",
+        description: `Lorem Ipsum is simply dummy text of the printing and typesetting industry 
+                    orem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                    when an unknown. Lorem Ipsum is simply dummy text of the printing and 
+                    typesetting industry orem Ipsum has been the industry's standard dummy 
+                    text ever since the 1500s, when an unknown.Ipsum has been the industry's 
+                    standard dummy text ever since the 1500s, when an unknown.`,
+        sectionImage: "love-beam-img.png",
+        extraClass: "section-with-image-container-style-2"
+    }
+
   heading = 'Latest Podcast';
   cardsData = [
     {
